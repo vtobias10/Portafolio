@@ -33,6 +33,19 @@ function disableDarkMode() {
     localStorage.setItem('darkMode', 'light');
 }
 
+function descargarCv() {
+    var urlPDF = 'ruta/del/tu-archivo.pdf';
+
+    var link = document.createElement('a');
+    link.href = urlPDF;
+    link.download = 'nombre-del-archivo.pdf';
+    link.target = '_blank';
+
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+}
 
 function enviarCorreo() {
     var destinatario = 'tobivelazquez80@gmail.com';
