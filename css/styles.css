@@ -1,0 +1,29 @@
+body {
+    background-color: #fff;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+    margin: 0;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #9b9b9b;
+}
+
+#darkModeToggle {
+    background: linear-gradient(to right, #9b9b9b, #383838);
+    transition: background 0.3s;
+}
+
+.dark-mode #darkModeToggle {
+    background: linear-gradient(to right, #383838, #9b9b9b);
+}
+
+hr {
+    border-top: 1px solid #000000; 
+}
+
+.dark-mode hr {
+    border-top: 1px solid #9b9b9b;
+}
