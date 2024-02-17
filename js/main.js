@@ -34,11 +34,11 @@ function disableDarkMode() {
 }
 
 function descargarCv() {
-    var urlPDF = 'ruta/del/tu-archivo.pdf';
+    var urlPDF = 'cv/VTobias-CV.pdf';
 
     var link = document.createElement('a');
     link.href = urlPDF;
-    link.download = 'nombre-del-archivo.pdf';
+    link.download = 'VTobias-CV.pdf';
     link.target = '_blank';
 
     document.body.appendChild(link);
@@ -49,7 +49,7 @@ function descargarCv() {
 
 function enviarCorreo() {
     var destinatario = 'tobivelazquez80@gmail.com';
-            var asunto = 'Asunto del correo';
+    var asunto = 'Asunto del correo';
     var cuerpo = 'Cuerpo del correo';
 
     var enlaceCorreo = 'mailto:' + destinatario + '?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpo);
